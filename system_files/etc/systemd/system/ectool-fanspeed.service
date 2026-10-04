@@ -1,0 +1,9 @@
+[Unit]
+Description=ectool fanspeed service.
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /usr/bin/ectool-fanspeed.sh
+
+[Install]
+WantedBy=multi-user.target

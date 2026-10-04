@@ -24,3 +24,13 @@ systemctl enable keyd.service
 git clone https://github.com/WeirdTreeThing/cros-keyboard-map /tmp/cros-keyboard-map
 mkdir -p /etc/libinput
 cp /tmp/cros-keyboard-map/local-overrides.quirks /etc/libinput/local-overrides.quirks
+
+### Install ectool fanspeed
+
+# Install ectool
+dnf5 --assumeyes copr enable ublue-os/staging
+dnf5 --assumeyes install fw-ectool
+dnf5 --assumeyes copr disable ublue-os/staging
+
+# Enable ectool-fanspeed service
+systemctl enable ectool-fanspeed.service

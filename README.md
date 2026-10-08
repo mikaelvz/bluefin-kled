@@ -1,5 +1,10 @@
 # Custom Universal Blue Bluefin image — Acer Chromebook Spin 713 (CP713-2W) (KLED)
 
+- Audio support enabled with [chromebook-linux-audio](https://github.com/WeirdTreeThing/chromebook-linux-audio).
+- Added support for Chromebook keyboard special keys with [keyd](https://copr.fedorainfracloud.org/coprs/alternateved/keyd/).
+- Added fan speed control with **`ectool`**.
+- Added official [Visual Studio Code](https://code.visualstudio.com/) package.
+
 ## Installation
 
 To rebase an existing atomic Fedora installation to the latest build:
